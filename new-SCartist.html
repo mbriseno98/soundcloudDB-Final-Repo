@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>New Artist Entry</title>
+    <button><a href ="index.html">Home</button></a><button><a href ="show-SCartists.php">Artist Catalog</button></a> <button><a href ="show-SCalbums.php">Album Catalog</button></a><button><a href ="show-SCsongs.php">Song Catalog</button></a>
+</head>
+<style>
+    body{
+      background-color: rgb(235, 127, 38);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color:black;
+  }
+  </style>
+<body>
+    <main role="main" class="container-fluid">
+        <h1> New Artist Entry </h1>
+        <p> To Insert entries correctly into the Database Please Enter  Artist first, <a href ="new-SCalbum.html">Album</a> Second, then <a href ="new-SCsong.html">Song</a> last.</p>
+
+        <form action="insert-SCartist.php" method="post">
+            <p>Artist <input type="text" name="name" maxlength="13" size="13" /></p>
+            <p>Age <input type="number" name="age" maxlength="2" size="30" /></p>
+            <p>Twitter<input type="text" name="social_media" maxlength="60" size="30" /></p>
+            <p>Label<input type="text" name="label" maxlength="7" size="7" /></p>
+           
+
+            <input type="submit" name="submit" value="Add Artist"/>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
